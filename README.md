@@ -9,19 +9,31 @@ java -jar jar/fakeSMTP-2.1-SNAPSHOT.jar -p 2525 -s
 - [fake-smtp-server](https://github.com/gessnerfl/fake-smtp-server) java, web
 
 ```
-java -jar -Dfakesmtp.port=2525 -Dserver.port=1080 jar/fake-smtp-server-1.5.0.jar
+java -jar -Dfakesmtp.port=2525 -Dserver.port=8025 jar/fake-smtp-server-1.5.0.jar
 ```
 
 - [fake-smtp-server](https://github.com/ReachFive/fake-smtp-server) javascript, web
 
 ```
 # npm install -g fake-smtp-server
-fake-smtp-server -s 2525 -h 1080
+fake-smtp-server -s 2525 -h 8025
+```
+
+- [MailHog](https://github.com/mailhog/MailHog) go
+
+```
+brew install mailhog
+
+# or
+
+go get github.com/mailhog/MailHog
+
+MailHog -smtp-bind-addr 0.0.0.0:2525
 ```
 
 ## Web
 
-[http://localhost:1080](http://localhost:1080/)
+[http://localhost:8025](http://localhost:8025/)
 
 ## SMTP
 
