@@ -23,8 +23,8 @@ func main() {
 
 	m.SetHeader("From", "john@mail.com")
 	m.SetHeader("To", "alice@gmail.com")
-	m.SetHeader("Subject", "Test !!!")
-	m.SetBody("text/plain", "This is a test")
+	m.SetHeader("Subject", "Test ทดสอบ テスト !!!")
+	m.SetBody("text/plain", "This is a test ทดสอบ テスト")
 
 	if err := d.DialAndSend(m); err != nil {
 		fmt.Println("Failed sending mail")
