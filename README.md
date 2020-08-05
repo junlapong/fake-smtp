@@ -45,8 +45,14 @@ localhost:2525
 # cd test-send-mail
 # go mod tidy
 
-$ go run main.go
+go run main.go
 
 Try sending mail...
 Mail sent without error
 ```
+
+## Others
+
+- [Hermes](https://github.com/matcornic/hermes) - package that generates clean, responsive HTML e-mails
+- [Different ways to send an email with Golang](https://www.loginradius.com/engineering/blog/sending-emails-with-golang/)
+
